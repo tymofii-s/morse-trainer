@@ -11,7 +11,7 @@ const words = ["а", "е", "к"]; // Додаси свої слова
 
 let currentTask = 1;
 
-function startTaskFromMenu() {
+function startTaskFromMenu(number) {
     document.getElementById("menu").classList.add("hidden");
     document.getElementById("task-screen").classList.remove("hidden");
     
@@ -29,6 +29,9 @@ function startTaskFromMenu() {
     document.getElementById("reset").classList.add("hidden")
     document.getElementById("praise").innerText = ""
     document.getElementById("answer").value = "";
+    if (number === 1) {
+        currentTask++;
+    }
 }
 
 function checkAnswer() {
