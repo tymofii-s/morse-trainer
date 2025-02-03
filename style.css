@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3f2fd; /* Світлий фон */
+    margin: 0;
+}
+
+.menu-container {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Левітація */
+    text-align: center;
+    width: 300px;
+    animation: float 3s ease-in-out infinite; /* Легка анімація */
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+a {
+    display: block;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+a:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}

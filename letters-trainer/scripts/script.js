@@ -1,7 +1,7 @@
 let currentTask = 1;
 
-function startTaskFromMenu(number) {
-    document.getElementById("menu").classList.add("hidden");
+function startTaskFromlobby(number) {
+    document.getElementById("lobby").classList.add("hidden");
     document.getElementById("task-screen").classList.remove("hidden");
     
     let word = words[Math.floor(Math.random() * words.length)];
@@ -35,14 +35,14 @@ function checkAnswer() {
     }
 }
 
-function leaveToMenu(number) {
+function leaveTolobby(number) {
     currentTask++;
     document.getElementById("reset").classList.add("hidden")
     document.getElementById("praise").innerText = ""
     document.getElementById("task-title").innerText = `Завдання ${currentTask}`;
     document.getElementById("answer").value = "";
     document.getElementById("task-screen").classList.add("hidden");
-    document.getElementById("menu").classList.remove("hidden");
+    document.getElementById("lobby").classList.remove("hidden");
 
     if (number === -1) {
         currentTask--;

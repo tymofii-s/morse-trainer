@@ -27,6 +27,22 @@ button {
     border-radius: 5px;
 }
 
+.back-button {
+    display: inline-block;
+    background-color: #ccc;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background-color: #bbb;
+}
+
 #question {
     background-color: crimson;
     color: white;

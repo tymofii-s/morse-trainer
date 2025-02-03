@@ -1,27 +1,16 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Азбука Морзе</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>menu</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="container">
-        <div id="menu">
-            <h1 id="task-title">Завдання 1</h1>
-            <button onclick="startTaskFromMenu()">Почати</button>
-        </div>
-        <div id="task-screen" class="hidden">
-            <button onclick="leaveToMenu(-1)">вийти в меню</button>
-            <p id="question"></p>
-            <input type="text" id="answer" placeholder="Введіть переклад">
-            <button onclick="checkAnswer()">Перевірити</button>
-            <p id="praise"></p>
-            <button id="reset" onclick="startTaskFromMenu(+1)" class="hidden">нова гра</button>
-        </div>
+    <div class="menu-container">
+        <h1>Головне меню</h1>
+        <a href="./trainer/words-trainer.html">Тренер слів</a>
+        <a href="./letters-trainer/letters-trainer.html">Тренер букв</a>
     </div>
-    <script src="./wordsAndMorseLists.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
